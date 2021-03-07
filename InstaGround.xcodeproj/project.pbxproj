@@ -13,6 +13,7 @@
 		754B430A25F2C19800123373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430925F2C19800123373 /* ContentView.swift */; };
 		754B430C25F2C19900123373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430B25F2C19900123373 /* Assets.xcassets */; };
 		754B430F25F2C19900123373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430E25F2C19900123373 /* Preview Assets.xcassets */; };
+		75CEA85425F5595E000EAC86 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEA85325F5595D000EAC86 /* PostGridView.swift */; };
 		75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E51BFB25F3ECE10062E374 /* FeedCell.swift */; };
 		75E51C0025F3FB6E0062E374 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E51BFF25F3FB6E0062E374 /* SearchBar.swift */; };
 		75E51C0325F42B590062E374 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E51C0225F42B580062E374 /* SearchView.swift */; };
@@ -29,6 +30,7 @@
 		754B430B25F2C19900123373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754B430E25F2C19900123373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		754B431025F2C19900123373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CEA85325F5595D000EAC86 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		75E51BFB25F3ECE10062E374 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		75E51BFF25F3FB6E0062E374 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		75E51C0225F42B580062E374 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				75E51C0625F432470062E374 /* UserCell.swift */,
 				75E51C0A25F434D70062E374 /* UserListView.swift */,
+				75CEA85325F5595D000EAC86 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				75E51C0325F42B590062E374 /* SearchView.swift in Sources */,
 				754B430825F2C19800123373 /* InstaGroundApp.swift in Sources */,
 				753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */,
+				75CEA85425F5595E000EAC86 /* PostGridView.swift in Sources */,
 				75E51C0025F3FB6E0062E374 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
