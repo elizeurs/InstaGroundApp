@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
   @State var searchText = ""
-  @State var inSearchMode = false
+  @State var inSearchMode = true
   
   var body: some View {
     ScrollView {

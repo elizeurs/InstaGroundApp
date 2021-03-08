@@ -22,6 +22,9 @@ struct UserCell: View {
           Text("Alexander Travelbum")
             .font(.system(size: 14, weight: .light))
         }
+        
+        Spacer()
+        
       }
     }
 }

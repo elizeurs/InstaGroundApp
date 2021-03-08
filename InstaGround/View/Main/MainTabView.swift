@@ -31,7 +31,8 @@ struct MainTabView: View {
               Text("Post")
             }
           
-          Text("Notifications")
+//          Text("Notifications")
+            NotificationsView()
             .tabItem {
               Image(systemName: "heart")
               Text("Notifications")
