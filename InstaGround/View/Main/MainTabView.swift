@@ -25,8 +25,9 @@ struct MainTabView: View {
               Text("Home")
             }
           
-          Text("New Post")
-            .tabItem {
+//          Text("New Post")
+              UploadPostView()
+              .tabItem {
               Image(systemName: "plus.app")
               Text("Post")
             }
