@@ -15,11 +15,15 @@ let items  =  [GridItem(), GridItem(), GridItem()]
     var body: some View {
       LazyVGrid(columns: items, spacing: 2, content: {
         ForEach(0 ..< 15) { item in
-          Image("london-landscape")
-            .resizable()
-            .scaledToFill()
-            .frame(width: width, height: width)
-            .clipped()
+          NavigationLink(
+            destination: FeedCell(),
+            label: {
+              Image("london-landscape")
+                .resizable()
+                .scaledToFill()
+                .frame(width: width, height: width)
+                .clipped()
+            })
         }
       })
     }

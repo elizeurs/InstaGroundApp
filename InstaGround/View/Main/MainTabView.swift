@@ -9,38 +9,43 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-      TabView {
-//        Text("Feed")
-        FeedView()
-          .tabItem {
-            Image(systemName: "house")
-            Text("Home")
-          }
-        
-//        Text("Explore")
-          SearchView()
-          .tabItem {
-            Image(systemName: "magnifyingglass")
-            Text("Home")
-          }
-        
-        Text("New Post")
-          .tabItem {
-            Image(systemName: "plus.app")
-            Text("Post")
-          }
-        
-        Text("Notifications")
-          .tabItem {
-            Image(systemName: "heart")
-            Text("Notifications")
-          }
-        
-        Text("Profile")
-          .tabItem {
-            Image(systemName: "person")
-            Text("Profile")
-          }
+      NavigationView {
+        TabView {
+  //        Text("Feed")
+          FeedView()
+            .tabItem {
+              Image(systemName: "house")
+              Text("Home")
+            }
+          
+  //        Text("Explore")
+            SearchView()
+            .tabItem {
+              Image(systemName: "magnifyingglass")
+              Text("Home")
+            }
+          
+          Text("New Post")
+            .tabItem {
+              Image(systemName: "plus.app")
+              Text("Post")
+            }
+          
+          Text("Notifications")
+            .tabItem {
+              Image(systemName: "heart")
+              Text("Notifications")
+            }
+          
+          Text("Profile")
+            .tabItem {
+              Image(systemName: "person")
+              Text("Profile")
+            }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .accentColor(.black)
+        }
       }
     }
 }
