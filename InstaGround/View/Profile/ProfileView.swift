@@ -10,6 +10,8 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
       ScrollView {
+        ProfileHeaderView()
+        
         PostGridView()
       }
     }
