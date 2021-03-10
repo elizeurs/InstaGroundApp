@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State var selectedIndex = 0
+  
     var body: some View {
 //        Text("Hello, world!")
 //            .padding()
-      MainTabView()
+      MainTabView(selectedIndex: $selectedIndex)
     }
 }
 

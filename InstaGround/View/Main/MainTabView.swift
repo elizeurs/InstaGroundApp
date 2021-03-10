@@ -8,53 +8,80 @@
 import SwiftUI
 
 struct MainTabView: View {
-    var body: some View {
-      NavigationView {
-        TabView {
-  //        Text("Feed")
-          FeedView()
-            .tabItem {
-              Image(systemName: "house")
-              Text("Home")
-            }
-          
-  //        Text("Explore")
-            SearchView()
-            .tabItem {
-              Image(systemName: "magnifyingglass")
-              Text("Home")
-            }
-          
-//          Text("New Post")
-              UploadPostView()
-              .tabItem {
-              Image(systemName: "plus.app")
-              Text("Post")
-            }
-          
-//          Text("Notifications")
-            NotificationsView()
-            .tabItem {
-              Image(systemName: "heart")
-              Text("Notifications")
-            }
-          
-//          Text("Profile")
-              ProfileView()
-            .tabItem {
-              Image(systemName: "person")
-              Text("Profile")
-            }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.black)
-        }
+  @Binding var selectedIndex: Int
+  
+  var body: some View {
+    NavigationView {
+      TabView(selection: $selectedIndex) {
+        //        Text("Feed")
+        FeedView()
+          .onTapGesture {
+            selectedIndex = 0
+          }
+          .tabItem {
+            Image(systemName: "house")
+            Text("Home")
+          }.tag(0)
+        
+        //        Text("Explore")
+        SearchView()
+          .onTapGesture {
+            selectedIndex = 1
+          }
+          .tabItem {
+            Image(systemName: "magnifyingglass")
+            Text("Explore")
+          }.tag(1)
+        
+        //          Text("New Post")
+        UploadPostView()
+          .onTapGesture {
+            selectedIndex = 2
+          }
+          .tabItem {
+            Image(systemName: "plus.app")
+            Text("Post")
+          }.tag(2)
+        
+        //          Text("Notifications")
+        NotificationsView()
+          .onTapGesture {
+            selectedIndex = 3
+          }
+          .tabItem {
+            Image(systemName: "heart")
+            Text("Notifications")
+          }.tag(3)
+        
+        //          Text("Profile")
+        ProfileView()
+          .onTapGesture {
+            selectedIndex = 4
+          }
+          .tabItem {
+            Image(systemName: "person")
+            Text("Profile")
+          }.tag(4)
       }
+      .navigationTitle(tabTitle)
+      .navigationBarTitleDisplayMode(.inline)
     }
+  }
+  
+  var tabTitle: String {
+    switch selectedIndex {
+    case 0: return "Feed"
+    case 1: return "Explore"
+    case 2: return "New Post"
+    case 3: return "Notifications"
+    case 4: return "Profile"
+    default: return ""
+    }
+  }
 }
 
-struct MainTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
-    }
-}
+//struct MainTabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainTabView()
+//    }
+//}
