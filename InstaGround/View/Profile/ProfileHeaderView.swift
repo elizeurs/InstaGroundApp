@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
-    var body: some View {
+  @State var isCurrentUser = false
+  @State var isFollowed = false
+  
+  var body: some View {
+    VStack {
       VStack(alignment: .leading) {
         HStack {
           Image("touropia")
-              .resizable()
-              .scaledToFit()
-              .frame(width: 80, height: 80)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 80, height: 80)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
           
           Spacer()
@@ -54,25 +58,17 @@ struct ProfileHeaderView: View {
         
         Text("Happy exploring!")
           .padding(.top, 1)
-        
-        Button(action: {
-            print("Button action")
-        }) {
-            Text("Edit Profile")
-              .frame(minWidth: 0, maxWidth: .infinity)
-              .foregroundColor(.black)
-              .font(.system(size: 18, weight: .semibold))
-              .padding()
-              .border(Color.black, width: 1)
-              .padding(.top)
-
-        }
-      }.padding()
+      }.padding(.leading)
+      
+      
+      ProfileActionButton(isCurrentUser: $isCurrentUser, isFollowed: $isFollowed)
+        .padding()
     }
+  }
 }
 
 struct ProfileHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileHeaderView()
-    }
+  static var previews: some View {
+    ProfileHeaderView()
+  }
 }

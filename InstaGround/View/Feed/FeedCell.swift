@@ -29,20 +29,20 @@ struct FeedCell: View {
         HStack {
           Image(systemName: "heart")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .padding()
           
           Image(systemName: "bubble.right")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .padding()
           
           Image(systemName: "paperplane")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .padding()
           
           Spacer()
         }
+        .padding(.leading)
+        .padding(.top, 5)
+        .padding(.bottom, 2)
         
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 5) {
           Text("0 likes")
           
           Text("the_travelbum").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text(" You won't believe this place exists in Brazil")
@@ -50,7 +50,7 @@ struct FeedCell: View {
           Text("1w")
             .foregroundColor(.gray)
         }
-        .padding()
+        .padding(.leading)
       }
     }
 }

@@ -8,13 +8,49 @@
 import SwiftUI
 
 struct ProfileActionButton: View {
+  @Binding var isCurrentUser: Bool
+  @Binding var isFollowed: Bool
+  
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+        if isCurrentUser {
+          Button(action: {
+              print("Button action")
+          }) {
+              Text("Edit Profile")
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .foregroundColor(.black)
+                .font(.system(size: 18, weight: .semibold))
+                .padding()
+                .border(Color.black, width: 1)
+                .padding(.top)
+
+          }
+        } else {
+          HStack() {
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+              Text(isFollowed ? "Following" : "Follow")
+                .frame(width: 150, height: 50)
+                .foregroundColor(isFollowed ? .black : .white)
+                .font(.system(size: 18, weight: .semibold))
+                .background(Color(isFollowed ? .white : #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
+                .border(Color(isFollowed ? .black : #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
+            })
+            
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+              Text("Message")
+                .frame(width: 150, height: 50)
+                .foregroundColor(.black)
+                .font(.system(size: 18, weight: .semibold))
+                .border(Color.black, width: 1)
+            })
+          }
+        }
+      }
     }
-}
 
 struct ProfileActionButton_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileActionButton()
+      ProfileActionButton(isCurrentUser: .constant(false), isFollowed: .constant(true))
     }
 }

@@ -11,6 +11,7 @@ struct ProfileView: View {
     var body: some View {
       ScrollView {
         ProfileHeaderView()
+          .padding(.top)
         
         PostGridView()
       }

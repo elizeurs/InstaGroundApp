@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct InstaGroundApp: App {
+  init() {
+    FirebaseApp.configure()
+  }
+  
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+          LoginView()
         }
     }
 }
