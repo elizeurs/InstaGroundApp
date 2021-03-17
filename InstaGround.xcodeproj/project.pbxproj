@@ -10,6 +10,8 @@
 		75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75108F3125F9744B004B28EC /* ProfileActionButton.swift */; };
 		753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAA25F30360006B88A6 /* MainTabView.swift */; };
 		753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAF25F30EA4006B88A6 /* FeedView.swift */; };
+		7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */; };
+		7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */; };
 		754B430825F2C19800123373 /* InstaGroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430725F2C19800123373 /* InstaGroundApp.swift */; };
 		754B430A25F2C19800123373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430925F2C19800123373 /* ContentView.swift */; };
 		754B430C25F2C19900123373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430B25F2C19900123373 /* Assets.xcassets */; };
@@ -36,12 +38,18 @@
 		75E71C5525FABFDA00E2A532 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5425FABFDA00E2A532 /* FirebaseFirestore */; };
 		75E71C5725FABFDA00E2A532 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5625FABFDA00E2A532 /* FirebaseMessaging */; };
 		75E71C5B25FAC5F900E2A532 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5A25FAC5F900E2A532 /* KingfisherSwiftUI */; };
+		75FB526626012353006BD1B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526526012353006BD1B2 /* User.swift */; };
+		75FB526A26012703006BD1B2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526926012703006BD1B2 /* AuthViewModel.swift */; };
+		75FB526E26012DA6006BD1B2 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526D26012DA6006BD1B2 /* ImageUploader.swift */; };
+		75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB527126015D34006BD1B2 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75108F3125F9744B004B28EC /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
 		753A1BAA25F30360006B88A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		753A1BAF25F30EA4006B88A6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		754B430425F2C19700123373 /* InstaGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754B430725F2C19800123373 /* InstaGroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaGroundApp.swift; sourceTree = "<group>"; };
 		754B430925F2C19800123373 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 		75E51C0625F432470062E374 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		75E51C0A25F434D70062E374 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		75E71C4825FAACC100E2A532 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75FB526526012353006BD1B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		75FB526926012703006BD1B2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		75FB526D26012DA6006BD1B2 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		75FB527126015D34006BD1B2 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +132,11 @@
 		754B430625F2C19700123373 /* InstaGround */ = {
 			isa = PBXGroup;
 			children = (
-				75B712DA25FD3BBC000451BC /* Utils */,
 				754B431825F2C2C700123373 /* Model */,
 				754B431725F2C2BF00123373 /* View */,
 				754B431925F2C2CF00123373 /* ViewModel */,
+				75FB526C26012D68006BD1B2 /* API */,
+				75B712DA25FD3BBC000451BC /* Utils */,
 				754B430725F2C19800123373 /* InstaGroundApp.swift */,
 				754B430B25F2C19900123373 /* Assets.xcassets */,
 				75E71C4825FAACC100E2A532 /* GoogleService-Info.plist */,
@@ -159,6 +172,7 @@
 		754B431825F2C2C700123373 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75FB526526012353006BD1B2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 		754B431925F2C2CF00123373 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				75FB5268260126E8006BD1B2 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				757482A225FC29A700579E05 /* LoginView.swift */,
+				7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */,
+				75FB527126015D34006BD1B2 /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -210,6 +227,7 @@
 			children = (
 				75AE754F25FEABA000D482F5 /* CustomTextField.swift */,
 				75AE755225FECA3600D482F5 /* CustomSecureField.swift */,
+				7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,6 +249,22 @@
 				75CEA85325F5595D000EAC86 /* PostGridView.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		75FB5268260126E8006BD1B2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				75FB526926012703006BD1B2 /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		75FB526C26012D68006BD1B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				75FB526D26012DA6006BD1B2 /* ImageUploader.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,22 +353,28 @@
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */,
 				75E51C0B25F434D70062E374 /* UserListView.swift in Sources */,
+				7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */,
 				753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */,
+				75FB526E26012DA6006BD1B2 /* ImageUploader.swift in Sources */,
 				7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */,
 				7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */,
 				75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */,
 				754B430A25F2C19800123373 /* ContentView.swift in Sources */,
 				7564B63025F6E19A00CBE01B /* ProfileHeaderView.swift in Sources */,
+				75FB526626012353006BD1B2 /* User.swift in Sources */,
 				75AE755025FEABA000D482F5 /* CustomTextField.swift in Sources */,
 				7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */,
 				75E51C0325F42B590062E374 /* SearchView.swift in Sources */,
 				757482A325FC29A700579E05 /* LoginView.swift in Sources */,
 				754B430825F2C19800123373 /* InstaGroundApp.swift in Sources */,
 				753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */,
+				75FB526A26012703006BD1B2 /* AuthViewModel.swift in Sources */,
 				75CEA85425F5595E000EAC86 /* PostGridView.swift in Sources */,
 				7564B62C25F6E18100CBE01B /* ProfileView.swift in Sources */,
 				75E51C0025F3FB6E0062E374 /* SearchBar.swift in Sources */,
+				75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */,
 				75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */,
+				7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
