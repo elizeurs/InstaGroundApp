@@ -16,8 +16,8 @@ struct InstaGroundApp: App {
   
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-          RegistrationView().environmentObject(AuthViewModel())
+          ContentView().environmentObject(AuthViewModel.shared)
+//          RegistrationView().environmentObject(AuthViewModel())
         }
     }
 }

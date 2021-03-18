@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct MainTabView: View {
-  @Binding var selectedIndex: Int
+//  @Binding var selectedIndex: Int
   
   var body: some View {
     NavigationView {
-      TabView(selection: $selectedIndex) {
+      TabView() {
+//      TabView(selection: $selectedIndex) {
         //        Text("Feed")
         FeedView()
           .onTapGesture {
-            selectedIndex = 0
+//            selectedIndex = 0
           }
           .tabItem {
             Image(systemName: "house")
@@ -26,7 +27,7 @@ struct MainTabView: View {
         //        Text("Explore")
         SearchView()
           .onTapGesture {
-            selectedIndex = 1
+//            selectedIndex = 1
           }
           .tabItem {
             Image(systemName: "magnifyingglass")
@@ -36,7 +37,7 @@ struct MainTabView: View {
         //          Text("New Post")
         UploadPostView()
           .onTapGesture {
-            selectedIndex = 2
+//            selectedIndex = 2
           }
           .tabItem {
             Image(systemName: "plus.app")
@@ -46,7 +47,7 @@ struct MainTabView: View {
         //          Text("Notifications")
         NotificationsView()
           .onTapGesture {
-            selectedIndex = 3
+//            selectedIndex = 3
           }
           .tabItem {
             Image(systemName: "heart")
@@ -56,28 +57,39 @@ struct MainTabView: View {
         //          Text("Profile")
         ProfileView()
           .onTapGesture {
-            selectedIndex = 4
+//            selectedIndex = 4
           }
           .tabItem {
             Image(systemName: "person")
             Text("Profile")
           }.tag(4)
       }
-      .navigationTitle(tabTitle)
+      .navigationTitle("Home")
       .navigationBarTitleDisplayMode(.inline)
+      .navigationBarItems(leading: logoutButton)
+      .accentColor(.black)
     }
   }
   
-  var tabTitle: String {
-    switch selectedIndex {
-    case 0: return "Feed"
-    case 1: return "Explore"
-    case 2: return "New Post"
-    case 3: return "Notifications"
-    case 4: return "Profile"
-    default: return ""
-    }
+  var logoutButton: some View {
+    Button(action: {
+      AuthViewModel.shared.signout()
+    }, label: {
+      Text("Logout").foregroundColor(.black)
+    })
   }
+  
+  
+//  var tabTitle: String {
+//    switch selectedIndex {
+//    case 0: return "Feed"
+//    case 1: return "Explore"
+//    case 2: return "New Post"
+//    case 3: return "Notifications"
+//    case 4: return "Profile"
+//    default: return ""
+//    }
+//  }
 }
 
 //struct MainTabView_Previews: PreviewProvider {

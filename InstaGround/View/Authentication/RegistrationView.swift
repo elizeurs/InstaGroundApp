@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct RegistrationView: View {
-  @State var email = ""
-  @State var username = ""
-  @State var fullname = ""
-  @State var password = ""
-  @State var image: Image?
+  @State private var email = ""
+  @State private var username = ""
+  @State private var fullname = ""
+  @State private var password = ""
+  @State private var image: Image?
+  @State private var selectedImage: UIImage?
   @State var imagePickerPresented = false
-  @State var selectedImage: UIImage?
   @EnvironmentObject var viewModel: AuthViewModel
   
     var body: some View {
@@ -30,7 +30,7 @@ struct RegistrationView: View {
           }, label: {
             Image(systemName: "plus.circle")
               .font(.system(size: 150, weight: .ultraLight))
-              .padding()
+//              .padding()
           })
           .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
             ImagePicker(image: $selectedImage)
@@ -61,7 +61,7 @@ struct RegistrationView: View {
             .padding(.horizontal, 32)
           
           Button(action: {
-            viewModel.register()
+            viewModel.register(withEmail: email, password: password)
           }, label: {
             Text("Sign Up")
               .font(.system(size: 18, weight: .semibold))
