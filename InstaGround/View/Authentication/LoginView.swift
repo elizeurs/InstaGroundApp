@@ -57,7 +57,7 @@ struct LoginView: View {
             .font(.system(size: 14, weight: .semibold))
             
             Button(action: {
-              viewModel.login()
+              viewModel.login(withEmail: email, password: password)
             }, label: {
               Text("Sign In")
                 .font(.headline)
