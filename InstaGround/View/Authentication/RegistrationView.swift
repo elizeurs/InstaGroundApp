@@ -24,17 +24,27 @@ struct RegistrationView: View {
           .ignoresSafeArea()
         
         VStack(spacing: 20) {
-          Button(action: {
-//            print("Show image picker")
-            self.imagePickerPresented.toggle()
-          }, label: {
-            Image(systemName: "plus.circle")
-              .font(.system(size: 150, weight: .ultraLight))
-//              .padding()
-          })
-          .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
-            ImagePicker(image: $selectedImage)
-          })
+          ZStack {
+            if let image = image {
+              image
+                .resizable()
+                .scaledToFill()
+                .frame(width: 140, height: 140)
+                .clipShape(Circle())
+            } else {
+              Button(action: {
+    //            print("Show image picker")
+                self.imagePickerPresented.toggle()
+              }, label: {
+                Image(systemName: "plus.circle")
+                  .font(.system(size: 150, weight: .ultraLight))
+    //              .padding()
+              })
+              .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                ImagePicker(image: $selectedImage)
+              })
+            }
+          }
           
           CustomTextField(text: $email, placeholder: Text("Email"), imagename: "envelope")
             .padding()
@@ -61,7 +71,7 @@ struct RegistrationView: View {
             .padding(.horizontal, 32)
           
           Button(action: {
-            viewModel.register(withEmail: email, password: password)
+            viewModel.register(withEmail: email, password: password, image: selectedImage, fullname: fullname, username: username)
           }, label: {
             Text("Sign Up")
               .font(.system(size: 18, weight: .semibold))

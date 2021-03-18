@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75108F3125F9744B004B28EC /* ProfileActionButton.swift */; };
+		7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D4352603BAC400B6ACE0 /* ImageUploader.swift */; };
 		753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAA25F30360006B88A6 /* MainTabView.swift */; };
 		753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAF25F30EA4006B88A6 /* FeedView.swift */; };
 		7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */; };
@@ -40,12 +41,12 @@
 		75E71C5B25FAC5F900E2A532 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5A25FAC5F900E2A532 /* KingfisherSwiftUI */; };
 		75FB526626012353006BD1B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526526012353006BD1B2 /* User.swift */; };
 		75FB526A26012703006BD1B2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526926012703006BD1B2 /* AuthViewModel.swift */; };
-		75FB526E26012DA6006BD1B2 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526D26012DA6006BD1B2 /* ImageUploader.swift */; };
 		75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB527126015D34006BD1B2 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75108F3125F9744B004B28EC /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
+		7525D4352603BAC400B6ACE0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		753A1BAA25F30360006B88A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		753A1BAF25F30EA4006B88A6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		75E71C4825FAACC100E2A532 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75FB526526012353006BD1B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		75FB526926012703006BD1B2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		75FB526D26012DA6006BD1B2 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		75FB527126015D34006BD1B2 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,7 +262,7 @@
 		75FB526C26012D68006BD1B2 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				75FB526D26012DA6006BD1B2 /* ImageUploader.swift */,
+				7525D4352603BAC400B6ACE0 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -352,10 +352,10 @@
 			files = (
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */,
+				7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */,
 				75E51C0B25F434D70062E374 /* UserListView.swift in Sources */,
 				7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */,
 				753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */,
-				75FB526E26012DA6006BD1B2 /* ImageUploader.swift in Sources */,
 				7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */,
 				7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */,
 				75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */,
