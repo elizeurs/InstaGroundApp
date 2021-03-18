@@ -2,17 +2,16 @@
 //  User.swift
 //  InstaGround
 //
-//  Created by Elizeu RS on 16/03/21.
+//  Created by Elizeu RS on 18/03/21.
 //
 
 import FirebaseFirestoreSwift
 
-struct User: Identifiable, Decodable {
+struct User: Decodable {
   let username: String
   let email: String
   let profileImageUrl: String
   let fullname: String
+//  let uid: String
   @DocumentID var id: String?
-  var bio: String?
-  
 }

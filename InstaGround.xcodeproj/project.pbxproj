@@ -40,7 +40,7 @@
 		75E71C5725FABFDA00E2A532 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5625FABFDA00E2A532 /* FirebaseMessaging */; };
 		75E71C5B25FAC5F900E2A532 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75E71C5A25FAC5F900E2A532 /* KingfisherSwiftUI */; };
 		75F58C672604088D00D3E9E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F58C662604088D00D3E9E9 /* Constants.swift */; };
-		75FB526626012353006BD1B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526526012353006BD1B2 /* User.swift */; };
+		75F58C6B2604115B00D3E9E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F58C6A2604115B00D3E9E9 /* User.swift */; };
 		75FB526A26012703006BD1B2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB526926012703006BD1B2 /* AuthViewModel.swift */; };
 		75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB527126015D34006BD1B2 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +74,7 @@
 		75E51C0A25F434D70062E374 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		75E71C4825FAACC100E2A532 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75F58C662604088D00D3E9E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		75FB526526012353006BD1B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		75F58C6A2604115B00D3E9E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		75FB526926012703006BD1B2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		75FB527126015D34006BD1B2 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +174,7 @@
 		754B431825F2C2C700123373 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				75FB526526012353006BD1B2 /* User.swift */,
+				75F58C6A2604115B00D3E9E9 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */,
 				7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */,
@@ -365,7 +366,6 @@
 				75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */,
 				754B430A25F2C19800123373 /* ContentView.swift in Sources */,
 				7564B63025F6E19A00CBE01B /* ProfileHeaderView.swift in Sources */,
-				75FB526626012353006BD1B2 /* User.swift in Sources */,
 				75AE755025FEABA000D482F5 /* CustomTextField.swift in Sources */,
 				7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */,
 				75E51C0325F42B590062E374 /* SearchView.swift in Sources */,
