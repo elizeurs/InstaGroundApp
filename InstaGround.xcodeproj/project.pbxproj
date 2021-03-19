@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750D118C26054C830072C60B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D118B26054C830072C60B /* SearchViewModel.swift */; };
 		75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75108F3125F9744B004B28EC /* ProfileActionButton.swift */; };
 		7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D4352603BAC400B6ACE0 /* ImageUploader.swift */; };
 		753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAA25F30360006B88A6 /* MainTabView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750D118B26054C830072C60B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		75108F3125F9744B004B28EC /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
 		7525D4352603BAC400B6ACE0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		753A1BAA25F30360006B88A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				75FB5268260126E8006BD1B2 /* Authentication */,
+				750D118B26054C830072C60B /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				7564B62C25F6E18100CBE01B /* ProfileView.swift in Sources */,
 				75E51C0025F3FB6E0062E374 /* SearchBar.swift in Sources */,
 				75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */,
+				750D118C26054C830072C60B /* SearchViewModel.swift in Sources */,
 				75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */,
 				7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */,
 			);
