@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct ProfileHeaderView: View {
-  @State var isCurrentUser = false
+  let user: User
+  
   @State var isFollowed = false
   
   var body: some View {
     VStack {
       VStack(alignment: .leading) {
         HStack {
-          Image("touropia")
+//          Image("touropia")
+          KFImage(URL(string: user.profileImageUrl))
             .resizable()
             .scaledToFit()
             .frame(width: 80, height: 80)
@@ -23,36 +26,16 @@ struct ProfileHeaderView: View {
           
           Spacer()
           
-          VStack {
-            Text("3")
-              .font(.system(size: 14, weight: .semibold))
-            Text("Post")
-              .font(.system(size: 14, weight: .light))
-          }
-          
-          Spacer()
-          
-          VStack {
-            Text("7")
-              .font(.system(size: 14, weight: .semibold))
-            Text("Followers")
-              .font(.system(size: 14, weight: .light))
-          }
-          
-          Spacer()
-          
-          VStack {
-            Text("12")
-              .font(.system(size: 14, weight: .semibold))
-            Text("Following")
-              .font(.system(size: 14, weight: .light))
-          }
-          
-          Spacer()
-          
+          HStack(spacing: 16) {
+            UserStatView(value: 1, title: "Post")
+            UserStatView(value: 2, title: "Followers")
+            UserStatView(value: 4, title: "Following")
+          }.padding(.trailing, 16)
+                    
         }
         
-        Text("Touropia")
+//        Text("Touropia")
+        Text(user.fullname)
           .font(.system(size: 18, weight: .semibold))
           .padding(.top)
         
@@ -61,14 +44,14 @@ struct ProfileHeaderView: View {
       }.padding(.leading)
       
       
-      ProfileActionButton(isCurrentUser: $isCurrentUser, isFollowed: $isFollowed)
+      ProfileActionButton(isCurrentUser: user.isCurrentUser, isFollowed: true)
         .padding()
     }
   }
 }
 
-struct ProfileHeaderView_Previews: PreviewProvider {
-  static var previews: some View {
-    ProfileHeaderView()
-  }
-}
+//struct ProfileHeaderView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ProfileHeaderView()
+//  }
+//}

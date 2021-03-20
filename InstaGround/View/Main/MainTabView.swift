@@ -55,14 +55,14 @@ struct MainTabView: View {
           }.tag(3)
         
         //          Text("Profile")
-        ProfileView()
-          .onTapGesture {
-//            selectedIndex = 4
-          }
-          .tabItem {
-            Image(systemName: "person")
-            Text("Profile")
-          }.tag(4)
+//        ProfileView()
+//          .onTapGesture {
+////            selectedIndex = 4
+//          }
+//          .tabItem {
+//            Image(systemName: "person")
+//            Text("Profile")
+//          }.tag(4)
       }
       .navigationTitle("Home")
       .navigationBarTitleDisplayMode(.inline)

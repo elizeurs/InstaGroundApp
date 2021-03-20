@@ -23,7 +23,7 @@ struct UserListView: View {
 //          ForEach(viewModel.users) { user in
           ForEach(users) { user in
             NavigationLink(
-              destination: ProfileView(),
+              destination: ProfileView(user: user),
               label: {
                 UserCell(user: user)
                   .padding(.leading)

@@ -12,6 +12,7 @@
 		7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D4352603BAC400B6ACE0 /* ImageUploader.swift */; };
 		753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAA25F30360006B88A6 /* MainTabView.swift */; };
 		753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAF25F30EA4006B88A6 /* FeedView.swift */; };
+		753C40CC260662C8001532E3 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C40CB260662C8001532E3 /* UserStatView.swift */; };
 		7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */; };
 		7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */; };
 		754B430825F2C19800123373 /* InstaGroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430725F2C19800123373 /* InstaGroundApp.swift */; };
@@ -52,6 +53,7 @@
 		7525D4352603BAC400B6ACE0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		753A1BAA25F30360006B88A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		753A1BAF25F30EA4006B88A6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		753C40CB260662C8001532E3 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		754B430425F2C19700123373 /* InstaGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +215,7 @@
 				7564B62B25F6E18100CBE01B /* ProfileView.swift */,
 				7564B62F25F6E19A00CBE01B /* ProfileHeaderView.swift */,
 				75108F3125F9744B004B28EC /* ProfileActionButton.swift */,
+				753C40CB260662C8001532E3 /* UserStatView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */,
+				753C40CC260662C8001532E3 /* UserStatView.swift in Sources */,
 				7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */,
 				75E51C0B25F434D70062E374 /* UserListView.swift in Sources */,
 				7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */,
