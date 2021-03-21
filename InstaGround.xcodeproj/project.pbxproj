@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750278862607B41000E397EB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750278852607B41000E397EB /* UserService.swift */; };
 		750D118C26054C830072C60B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D118B26054C830072C60B /* SearchViewModel.swift */; };
-		75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75108F3125F9744B004B28EC /* ProfileActionButton.swift */; };
+		75108F3225F9744B004B28EC /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75108F3125F9744B004B28EC /* ProfileActionButtonView.swift */; };
 		7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D4352603BAC400B6ACE0 /* ImageUploader.swift */; };
 		753A1BAB25F30360006B88A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAA25F30360006B88A6 /* MainTabView.swift */; };
 		753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A1BAF25F30EA4006B88A6 /* FeedView.swift */; };
 		753C40CC260662C8001532E3 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C40CB260662C8001532E3 /* UserStatView.swift */; };
+		753C40D02606ACF0001532E3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C40CF2606ACF0001532E3 /* ProfileViewModel.swift */; };
 		7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */; };
 		7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */; };
 		754B430825F2C19800123373 /* InstaGroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430725F2C19800123373 /* InstaGroundApp.swift */; };
@@ -48,12 +50,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750278852607B41000E397EB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		750D118B26054C830072C60B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		75108F3125F9744B004B28EC /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
+		75108F3125F9744B004B28EC /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		7525D4352603BAC400B6ACE0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		753A1BAA25F30360006B88A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		753A1BAF25F30EA4006B88A6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		753C40CB260662C8001532E3 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		753C40CF2606ACF0001532E3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		7549FE8A25FFC961002AFAA3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		754B430425F2C19700123373 /* InstaGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,14 @@
 				75E51BFB25F3ECE10062E374 /* FeedCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		753C40CE2606ACD5001532E3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				753C40CF2606ACF0001532E3 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		754B42FB25F2C19700123373 = {
@@ -186,6 +198,7 @@
 		754B431925F2C2CF00123373 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				753C40CE2606ACD5001532E3 /* Profile */,
 				75FB5268260126E8006BD1B2 /* Authentication */,
 				750D118B26054C830072C60B /* SearchViewModel.swift */,
 			);
@@ -214,7 +227,7 @@
 			children = (
 				7564B62B25F6E18100CBE01B /* ProfileView.swift */,
 				7564B62F25F6E19A00CBE01B /* ProfileHeaderView.swift */,
-				75108F3125F9744B004B28EC /* ProfileActionButton.swift */,
+				75108F3125F9744B004B28EC /* ProfileActionButtonView.swift */,
 				753C40CB260662C8001532E3 /* UserStatView.swift */,
 			);
 			path = Profile;
@@ -272,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				7525D4352603BAC400B6ACE0 /* ImageUploader.swift */,
+				750278852607B41000E397EB /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -361,6 +375,7 @@
 			files = (
 				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
+				753C40D02606ACF0001532E3 /* ProfileViewModel.swift in Sources */,
 				75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */,
 				753C40CC260662C8001532E3 /* UserStatView.swift in Sources */,
 				7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */,
@@ -384,8 +399,9 @@
 				7564B62C25F6E18100CBE01B /* ProfileView.swift in Sources */,
 				75E51C0025F3FB6E0062E374 /* SearchBar.swift in Sources */,
 				75FB527226015D34006BD1B2 /* ResetPasswordView.swift in Sources */,
+				750278862607B41000E397EB /* UserService.swift in Sources */,
 				750D118C26054C830072C60B /* SearchViewModel.swift in Sources */,
-				75108F3225F9744B004B28EC /* ProfileActionButton.swift in Sources */,
+				75108F3225F9744B004B28EC /* ProfileActionButtonView.swift in Sources */,
 				7549FE8B25FFC961002AFAA3 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ProfileActionButton.swift
+//  ProfileActionButtonView.swift
 //  InstaGround
 //
 //  Created by Elizeu RS on 10/03/21.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ProfileActionButton: View {
-  let isCurrentUser: Bool
+struct ProfileActionButtonView: View {
+//  let isCurrentUser: Bool
+  @ObservedObject var viewModel: ProfileViewModel
   var isFollowed = false
   
     var body: some View {
-      
-        if isCurrentUser {
+      if viewModel.user.isCurrentUser {
           Button(action: {
               print("Button action")
           }) {
@@ -28,7 +28,7 @@ struct ProfileActionButton: View {
           }
         } else {
           HStack() {
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: { isFollowed ? viewModel.unfollow() : viewModel.follow() }, label: {
               Text(isFollowed ? "Following" : "Follow")
                 .frame(width: 150, height: 50)
                 .foregroundColor(isFollowed ? .black : .white)

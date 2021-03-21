@@ -9,7 +9,9 @@ import SwiftUI
 import KingfisherSwiftUI
 
 struct ProfileHeaderView: View {
-  let user: User
+//  let user: User
+  @ObservedObject var viewModel: ProfileViewModel
+
   
   @State var isFollowed = false
   
@@ -18,7 +20,7 @@ struct ProfileHeaderView: View {
       VStack(alignment: .leading) {
         HStack {
 //          Image("touropia")
-          KFImage(URL(string: user.profileImageUrl))
+          KFImage(URL(string: viewModel.user.profileImageUrl))
             .resizable()
             .scaledToFit()
             .frame(width: 80, height: 80)
@@ -35,7 +37,7 @@ struct ProfileHeaderView: View {
         }
         
 //        Text("Touropia")
-        Text(user.fullname)
+        Text(viewModel.user.fullname)
           .font(.system(size: 18, weight: .semibold))
           .padding(.top)
         
@@ -44,7 +46,8 @@ struct ProfileHeaderView: View {
       }.padding(.leading)
       
       
-      ProfileActionButton(isCurrentUser: user.isCurrentUser, isFollowed: true)
+//      ProfileActionButton(isCurrentUser: viewModel.isCurrentUser, isFollowed: true)
+      ProfileActionButtonView(viewModel: viewModel, isFollowed: false)
         .padding()
     }
   }
