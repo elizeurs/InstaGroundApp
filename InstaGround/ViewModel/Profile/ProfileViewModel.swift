@@ -8,7 +8,8 @@
 import SwiftUI
 
 class ProfileViewModel: ObservableObject {
-  let user: User
+//  let user: User
+  @Published var user: User
   
   init(user: User) {
     self.user = user
@@ -18,7 +19,8 @@ class ProfileViewModel: ObservableObject {
 //    print("DEBUG: Follow user...")
     guard let uid = user.id else { return }
     UserService.follow(uid: uid) { _ in
-      print("Successfully followed \(self.user.username)")
+//      print("Successfully followed \(self.user.username)")
+      self.user.isFollowed = true
     }
   }
   

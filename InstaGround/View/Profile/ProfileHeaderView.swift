@@ -47,7 +47,7 @@ struct ProfileHeaderView: View {
       
       
 //      ProfileActionButton(isCurrentUser: viewModel.isCurrentUser, isFollowed: true)
-      ProfileActionButtonView(viewModel: viewModel, isFollowed: false)
+      ProfileActionButtonView(viewModel: viewModel)
         .padding()
     }
   }
