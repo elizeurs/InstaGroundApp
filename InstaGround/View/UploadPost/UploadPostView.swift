@@ -39,6 +39,7 @@ struct UploadPostView: View {
             .resizable()
             .scaledToFill()
             .frame(width: 100, height: 100)
+            .padding()
         
 //          TextField("Enter your caption... ", text: $captionTest)
           TextArea(text: $captionTest, placeholder: "Enter your caption..")
@@ -75,12 +76,12 @@ struct UploadPostView: View {
               .foregroundColor(.white)
           })
         }
-        .padding()
         
         Spacer()
         
       }
     }
+    .padding()
   }
 }
 

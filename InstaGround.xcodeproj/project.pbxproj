@@ -22,6 +22,8 @@
 		754B430C25F2C19900123373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430B25F2C19900123373 /* Assets.xcassets */; };
 		754B430F25F2C19900123373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430E25F2C19900123373 /* Preview Assets.xcassets */; };
 		754F59A9260A4FDF005E6687 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59A8260A4FDF005E6687 /* TextArea.swift */; };
+		754F59AC260A73AE005E6687 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59AB260A73AE005E6687 /* Post.swift */; };
+		754F59B0260A7CA7005E6687 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59AF260A7CA7005E6687 /* FeedViewModel.swift */; };
 		7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B61D25F6940300CBE01B /* NotificationsView.swift */; };
 		7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62225F69E0A00CBE01B /* NotificationCell.swift */; };
 		7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62625F6CF4800CBE01B /* UploadPostView.swift */; };
@@ -69,6 +71,8 @@
 		754B430E25F2C19900123373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		754B431025F2C19900123373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754F59A8260A4FDF005E6687 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		754F59AB260A73AE005E6687 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		754F59AF260A7CA7005E6687 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		7564B61D25F6940300CBE01B /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		7564B62225F69E0A00CBE01B /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		7564B62625F6CF4800CBE01B /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				75F58C6A2604115B00D3E9E9 /* User.swift */,
+				754F59AB260A73AE005E6687 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,12 +207,21 @@
 		754B431925F2C2CF00123373 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				754F59AE260A7C80005E6687 /* Feed */,
 				753C40CE2606ACD5001532E3 /* Profile */,
 				75FB5268260126E8006BD1B2 /* Authentication */,
 				750D118B26054C830072C60B /* SearchViewModel.swift */,
 				75D1BD2B260913ED00BF7901 /* UploadPostViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		754F59AE260A7C80005E6687 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				754F59AF260A7CA7005E6687 /* FeedViewModel.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		7564B62025F69DCD00CBE01B /* Notifications */ = {
@@ -391,11 +405,13 @@
 				753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */,
 				7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */,
 				75F58C672604088D00D3E9E9 /* Constants.swift in Sources */,
+				754F59AC260A73AE005E6687 /* Post.swift in Sources */,
 				7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */,
 				75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */,
 				754B430A25F2C19800123373 /* ContentView.swift in Sources */,
 				7564B63025F6E19A00CBE01B /* ProfileHeaderView.swift in Sources */,
 				75AE755025FEABA000D482F5 /* CustomTextField.swift in Sources */,
+				754F59B0260A7CA7005E6687 /* FeedViewModel.swift in Sources */,
 				7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */,
 				75E51C0325F42B590062E374 /* SearchView.swift in Sources */,
 				757482A325FC29A700579E05 /* LoginView.swift in Sources */,

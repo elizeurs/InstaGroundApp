@@ -10,10 +10,13 @@ import SwiftUI
 
 
 struct FeedView: View {
+  @ObservedObject var viewModel = FeedViewModel()
+  
   var body: some View {
     ScrollView {
-      ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-        FeedCell()
+//      ForEach(0 ..< 5) { item in
+      ForEach(viewModel.posts) { post in
+        FeedCell(post: post)
       }
     }
   }

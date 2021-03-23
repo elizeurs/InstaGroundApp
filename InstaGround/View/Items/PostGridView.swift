@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct PostGridView: View {
+@ObservedObject var viewModel = FeedViewModel()
   
 let items  =  [GridItem(), GridItem(), GridItem()]
   let width = UIScreen.main.bounds.width / 3
 
     var body: some View {
       LazyVGrid(columns: items, spacing: 2, content: {
-        ForEach(0 ..< 15) { item in
+//        ForEach(0 ..< 15) { item in
+        ForEach(viewModel.posts) { post in
+
           NavigationLink(
-            destination: FeedCell(),
+            destination: FeedCell(post: post),
             label: {
               Image("london-landscape")
                 .resizable()
