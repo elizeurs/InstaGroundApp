@@ -12,6 +12,7 @@ struct UploadPostView: View {
   @State var postImage: Image?
   @State var captionTest = ""
   @State var imagePickerPresented = false
+  @Binding var tabIndex: Int
   @ObservedObject var viewModel = UploadPostViewModel()
   
   var body: some View {
@@ -33,7 +34,8 @@ struct UploadPostView: View {
 
       } else if let image = postImage {
         HStack(alignment: .top) {
-          Image("touropia")
+//          Image("touropia")
+          image
             .resizable()
             .scaledToFill()
             .frame(width: 100, height: 100)
@@ -43,7 +45,11 @@ struct UploadPostView: View {
         
         Button(action: {
           if let image = selectedImage {
-            viewModel.uploadPost(caption: captionTest, image: image)
+            viewModel.uploadPost(caption: captionTest, image: image) { _ in
+              captionTest = ""
+              postImage = nil
+              tabIndex = 0
+            }
           }
         }, label: {
           Text("Share")
@@ -53,6 +59,9 @@ struct UploadPostView: View {
             .cornerRadius(5)
             .foregroundColor(.white)
         }).padding()
+        
+        Spacer()
+        
       }
     }
   }
@@ -65,26 +74,9 @@ extension UploadPostView {
   }
 }
 
-struct UploadPostView_Previews: PreviewProvider {
-  static var previews: some View {
-    UploadPostView()
-  }
-}
+//struct UploadPostView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    UploadPostView()
+//  }
+//}
 
-//HStack(alignment: .top) {
-//  Image("touropia")
-//    .resizable()
-//    .scaledToFill()
-//    .frame(width: 100, height: 100)
-//
-//  TextField("Enter your caption... ", text: $captionTest)
-//}.padding()
-//
-//Button(action: {}, label: {
-//  Text("Share")
-//    .font(.system(size: 16, weight: .semibold))
-//    .frame(width: 360, height: 50)
-//    .background(Color.blue)
-//    .cornerRadius(5)
-//    .foregroundColor(.white)
-//}).padding()
