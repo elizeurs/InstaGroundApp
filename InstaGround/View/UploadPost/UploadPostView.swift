@@ -40,7 +40,9 @@ struct UploadPostView: View {
             .scaledToFill()
             .frame(width: 100, height: 100)
         
-          TextField("Enter your caption... ", text: $captionTest)
+//          TextField("Enter your caption... ", text: $captionTest)
+          TextArea(text: $captionTest, placeholder: "Enter your caption..")
+            .frame(height: 200)
         }.padding()
         
         Button(action: {

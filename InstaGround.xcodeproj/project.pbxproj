@@ -21,6 +21,7 @@
 		754B430A25F2C19800123373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B430925F2C19800123373 /* ContentView.swift */; };
 		754B430C25F2C19900123373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430B25F2C19900123373 /* Assets.xcassets */; };
 		754B430F25F2C19900123373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B430E25F2C19900123373 /* Preview Assets.xcassets */; };
+		754F59A9260A4FDF005E6687 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59A8260A4FDF005E6687 /* TextArea.swift */; };
 		7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B61D25F6940300CBE01B /* NotificationsView.swift */; };
 		7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62225F69E0A00CBE01B /* NotificationCell.swift */; };
 		7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62625F6CF4800CBE01B /* UploadPostView.swift */; };
@@ -67,6 +68,7 @@
 		754B430B25F2C19900123373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754B430E25F2C19900123373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		754B431025F2C19900123373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F59A8260A4FDF005E6687 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		7564B61D25F6940300CBE01B /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		7564B62225F69E0A00CBE01B /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		7564B62625F6CF4800CBE01B /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				75AE755225FECA3600D482F5 /* CustomSecureField.swift */,
 				7549FE8D26001BBF002AFAA3 /* ImagePicker.swift */,
 				75F58C662604088D00D3E9E9 /* Constants.swift */,
+				754F59A8260A4FDF005E6687 /* TextArea.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				753C40CC260662C8001532E3 /* UserStatView.swift in Sources */,
 				7525D4362603BAC400B6ACE0 /* ImageUploader.swift in Sources */,
 				75E51C0B25F434D70062E374 /* UserListView.swift in Sources */,
+				754F59A9260A4FDF005E6687 /* TextArea.swift in Sources */,
 				7549FE8E26001BBF002AFAA3 /* ImagePicker.swift in Sources */,
 				753A1BB025F30EA4006B88A6 /* FeedView.swift in Sources */,
 				7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */,
