@@ -16,7 +16,7 @@ struct FeedView: View {
     ScrollView {
 //      ForEach(0 ..< 5) { item in
       ForEach(viewModel.posts) { post in
-        FeedCell(post: post)
+        FeedCell(viewModel: FeedCellViewModel(post: post))
       }
     }
   }
