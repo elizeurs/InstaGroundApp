@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct PostGridView: View {
-@ObservedObject var viewModel = FeedViewModel()
+  private let items  =  [GridItem(), GridItem(), GridItem()]
+  private let width = UIScreen.main.bounds.width / 3
   
-let items  =  [GridItem(), GridItem(), GridItem()]
-  let width = UIScreen.main.bounds.width / 3
+  let config: PostGridConfiguration
+  @ObservedObject var viewModel: PostGridViewModel
+  
+  init(config: PostGridConfiguration) {
+    self.config = config
+    self.viewModel = PostGridViewModel(config: config)
+  }
 
     var body: some View {
       LazyVGrid(columns: items, spacing: 2, content: {
@@ -21,7 +28,8 @@ let items  =  [GridItem(), GridItem(), GridItem()]
           NavigationLink(
             destination: FeedCell(post: post),
             label: {
-              Image("london-landscape")
+//              Image("london-landscape")
+              KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(width: width, height: width)
@@ -32,8 +40,8 @@ let items  =  [GridItem(), GridItem(), GridItem()]
     }
 }
 
-struct PostGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostGridView()
-    }
-}
+//struct PostGridView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PostGridView()
+//    }
+//}

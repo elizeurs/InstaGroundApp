@@ -24,6 +24,7 @@
 		754F59A9260A4FDF005E6687 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59A8260A4FDF005E6687 /* TextArea.swift */; };
 		754F59AC260A73AE005E6687 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59AB260A73AE005E6687 /* Post.swift */; };
 		754F59B0260A7CA7005E6687 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59AF260A7CA7005E6687 /* FeedViewModel.swift */; };
+		754F59B4260AA760005E6687 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F59B3260AA760005E6687 /* PostGridViewModel.swift */; };
 		7564B61E25F6940300CBE01B /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B61D25F6940300CBE01B /* NotificationsView.swift */; };
 		7564B62325F69E0A00CBE01B /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62225F69E0A00CBE01B /* NotificationCell.swift */; };
 		7564B62725F6CF4800CBE01B /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564B62625F6CF4800CBE01B /* UploadPostView.swift */; };
@@ -73,6 +74,7 @@
 		754F59A8260A4FDF005E6687 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		754F59AB260A73AE005E6687 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		754F59AF260A7CA7005E6687 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		754F59B3260AA760005E6687 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		7564B61D25F6940300CBE01B /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		7564B62225F69E0A00CBE01B /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		7564B62625F6CF4800CBE01B /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				75FB5268260126E8006BD1B2 /* Authentication */,
 				750D118B26054C830072C60B /* SearchViewModel.swift */,
 				75D1BD2B260913ED00BF7901 /* UploadPostViewModel.swift */,
+				754F59B3260AA760005E6687 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754F59B4260AA760005E6687 /* PostGridViewModel.swift in Sources */,
 				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				753C40D02606ACF0001532E3 /* ProfileViewModel.swift in Sources */,
