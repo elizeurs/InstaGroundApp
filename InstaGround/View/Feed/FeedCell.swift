@@ -45,8 +45,9 @@ struct FeedCell: View {
           didLike ? viewModel.unlike() : viewModel.like()
 
         }, label: {
-          Image(systemName: "heart")
+          Image(systemName: didLike ? "heart.fill" : "heart")
             .font(.title)
+            .foregroundColor(didLike ? .red : .black)
         })
         
         Image(systemName: "bubble.right")
@@ -63,8 +64,8 @@ struct FeedCell: View {
       
       VStack(alignment: .leading, spacing: 5) {
         //          Text("0 likes")
-        Text("\(viewModel.post.likes) likes")
-        
+//        Text("\(viewModel.post.likes) likes")
+        Text(viewModel.likeString)
         
         //          Text("the_travelbum").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text(" You won't believe this place exists in Brazil")
         Text(viewModel.post.ownerUsername).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text(" \(viewModel.post.caption)")
