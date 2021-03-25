@@ -46,15 +46,31 @@ struct FeedCell: View {
 
         }, label: {
           Image(systemName: didLike ? "heart.fill" : "heart")
-            .font(.title)
+            .resizable()
+            .scaledToFill()
             .foregroundColor(didLike ? .red : .black)
+            .frame(width: 20, height: 20)
+            .font(.system(size: 20))
+            .padding(4)
         })
         
-        Image(systemName: "bubble.right")
-          .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+        NavigationLink(
+          destination: CommentsView(),
+          label: {
+            Image(systemName: "bubble.right")
+              .resizable()
+              .scaledToFill()
+              .frame(width: 20, height: 20)
+              .font(.system(size: 20))
+              .padding(4)
+          })
         
         Image(systemName: "paperplane")
-          .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+          .resizable()
+          .scaledToFill()
+          .frame(width: 20, height: 20)
+          .font(.system(size: 20))
+          .padding(4)
         
         Spacer()
       }
