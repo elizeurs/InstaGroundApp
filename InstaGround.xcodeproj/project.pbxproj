@@ -38,6 +38,7 @@
 		75B83FFF260CF390000FA64D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83FFE260CF390000FA64D /* CommentCell.swift */; };
 		75B84002260CF3B1000FA64D /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B84001260CF3B1000FA64D /* CommentViewModel.swift */; };
 		75B84006260CF417000FA64D /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B84005260CF417000FA64D /* CommentsView.swift */; };
+		75B84009260D10D8000FA64D /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B84008260D10D8000FA64D /* CustomInputView.swift */; };
 		75CEA85425F5595E000EAC86 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEA85325F5595D000EAC86 /* PostGridView.swift */; };
 		75D1BD2C260913ED00BF7901 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1BD2B260913ED00BF7901 /* UploadPostViewModel.swift */; };
 		75E51BFC25F3ECE10062E374 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E51BFB25F3ECE10062E374 /* FeedCell.swift */; };
@@ -93,6 +94,7 @@
 		75B83FFE260CF390000FA64D /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		75B84001260CF3B1000FA64D /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		75B84005260CF417000FA64D /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		75B84008260D10D8000FA64D /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		75CEA85325F5595D000EAC86 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		75D1BD2B260913ED00BF7901 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		75E51BFB25F3ECE10062E374 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				75E51C0625F432470062E374 /* UserCell.swift */,
 				75E51C0A25F434D70062E374 /* UserListView.swift */,
 				75CEA85325F5595D000EAC86 /* PostGridView.swift */,
+				75B84008260D10D8000FA64D /* CustomInputView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			files = (
 				754F59B4260AA760005E6687 /* PostGridViewModel.swift in Sources */,
 				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
+				75B84009260D10D8000FA64D /* CustomInputView.swift in Sources */,
 				7500B3A3260BAFBA0045464E /* FeedCellViewModel.swift in Sources */,
 				75E51C0725F432470062E374 /* UserCell.swift in Sources */,
 				753C40D02606ACF0001532E3 /* ProfileViewModel.swift in Sources */,

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CommentsView: View {
+  @State var commentText = ""
+  
   var body: some View {
     VStack {
       // comment cells
@@ -20,8 +22,12 @@ struct CommentsView: View {
       }.padding()
       
       // input view
-      
+      CustomInputView(inputText: $commentText, action: uploadComment)
     }
+  }
+  
+  func uploadComment() {
+    
   }
 }
 
