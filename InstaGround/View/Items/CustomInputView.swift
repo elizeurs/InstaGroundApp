@@ -31,10 +31,11 @@ struct CustomInputView: View {
             .bold()
             .foregroundColor(.black)
         }
-      }
+      }.padding(.horizontal)
+      .padding(.bottom)
     }
-    .padding(.bottom, 8)
-    .padding(.horizontal)
+//    .padding(.bottom, 8)
+//    .padding(.horizontal)
   }
 }
 
