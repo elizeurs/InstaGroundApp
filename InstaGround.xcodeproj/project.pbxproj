@@ -35,6 +35,7 @@
 		75AE755025FEABA000D482F5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE754F25FEABA000D482F5 /* CustomTextField.swift */; };
 		75AE755325FECA3600D482F5 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE755225FECA3600D482F5 /* CustomSecureField.swift */; };
 		75B51BA3261119D800624B18 /* Natification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B51BA2261119D800624B18 /* Natification.swift */; };
+		75B51BA726112CBB00624B18 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B51BA626112CBB00624B18 /* NotificationsViewModel.swift */; };
 		75B83FF8260CF348000FA64D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83FF7260CF348000FA64D /* Comment.swift */; };
 		75B83FFF260CF390000FA64D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83FFE260CF390000FA64D /* CommentCell.swift */; };
 		75B84002260CF3B1000FA64D /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B84001260CF3B1000FA64D /* CommentViewModel.swift */; };
@@ -92,6 +93,7 @@
 		75AE754F25FEABA000D482F5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		75AE755225FECA3600D482F5 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		75B51BA2261119D800624B18 /* Natification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Natification.swift; sourceTree = "<group>"; };
+		75B51BA626112CBB00624B18 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		75B83FF7260CF348000FA64D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		75B83FFE260CF390000FA64D /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		75B84001260CF3B1000FA64D /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		754B431925F2C2CF00123373 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				75B51BA526112CA000624B18 /* Notifications */,
 				754F59AE260A7C80005E6687 /* Feed */,
 				753C40CE2606ACD5001532E3 /* Profile */,
 				75FB5268260126E8006BD1B2 /* Authentication */,
@@ -282,6 +285,14 @@
 				75FB527126015D34006BD1B2 /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		75B51BA526112CA000624B18 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				75B51BA626112CBB00624B18 /* NotificationsViewModel.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		75B712DA25FD3BBC000451BC /* Utils */ = {
@@ -425,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B51BA726112CBB00624B18 /* NotificationsViewModel.swift in Sources */,
 				754F59B4260AA760005E6687 /* PostGridViewModel.swift in Sources */,
 				75F58C6B2604115B00D3E9E9 /* User.swift in Sources */,
 				75B84009260D10D8000FA64D /* CustomInputView.swift in Sources */,
