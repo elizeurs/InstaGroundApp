@@ -37,6 +37,9 @@ struct ProfileActionButtonView: View {
                 .font(.system(size: 14, weight: .semibold))
                 .background(Color(isFollowed ? .white : #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
                 .border(Color(isFollowed ? .black : #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
+                .cornerRadius(3)
+                .overlay(RoundedRectangle(cornerRadius: 3)
+                          .stroke(Color.gray, lineWidth: isFollowed ? 1 : 0))
             })
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -45,6 +48,7 @@ struct ProfileActionButtonView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 14, weight: .semibold))
                 .border(Color.black, width: 1)
+                .cornerRadius(3)
             })
           }
         }

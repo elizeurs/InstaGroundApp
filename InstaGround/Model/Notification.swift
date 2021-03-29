@@ -1,5 +1,5 @@
 //
-//  Natification.swift
+//  Notification.swift
 //  InstaGround
 //
 //  Created by Elizeu RS on 28/03/21.
@@ -19,6 +19,7 @@ struct Notification: Identifiable, Decodable {
   let uid: String
   
   var isFollowed: Bool? = false
+  var post: Post?
 }
 
 enum NotificationType: Int, Decodable {
