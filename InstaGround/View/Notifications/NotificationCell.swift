@@ -25,16 +25,21 @@ struct NotificationCell: View {
   @State private var showPostImage = true
   
     var body: some View {
+      
       HStack {
 //        Image("touropia")
-        KFImage(URL(string: viewModel.notification.profileImageUrl))
-          .resizable()
-          .scaledToFit()
-          .frame(width: 50, height: 50)
-          .clipShape(Circle())
-        
-//        Text("touropia").font(.system(size: 14, weight: .semibold)) + Text(" liked one of your posts.").font(.system(size: 14, weight: .light)) + Text(" 2w").font(.system(size: 14, weight: .light)).foregroundColor(.gray)
-        Text(viewModel.notification.username).font(.system(size: 14, weight: .semibold)) + Text(viewModel.notification.type.notificationMessage).font(.system(size: 14, weight: .light))
+        if let user = viewModel.notification.user {
+          NavigationLink(destination: ProfileView(user: user)) {
+            KFImage(URL(string: viewModel.notification.profileImageUrl))
+              .resizable()
+              .scaledToFit()
+              .frame(width: 50, height: 50)
+              .clipShape(Circle())
+            
+    //        Text("touropia").font(.system(size: 14, weight: .semibold)) + Text(" liked one of your posts.").font(.system(size: 14, weight: .light)) + Text(" 2w").font(.system(size: 14, weight: .light)).foregroundColor(.gray)
+            Text(viewModel.notification.username).font(.system(size: 14, weight: .semibold)) + Text(viewModel.notification.type.notificationMessage).font(.system(size: 14, weight: .light))
+          }
+        }
         
         Spacer()
         
