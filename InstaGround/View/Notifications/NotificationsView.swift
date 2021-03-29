@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct NotificationsView: View {
+  @ObservedObject var viewModel = NotificationsViewModel()
+  
   var body: some View {
     ScrollView {
-      ForEach(0 ..< 15) { item in
-        NotificationCell()
+//      ForEach(0 ..< 15) { item in
+      ForEach(viewModel.notifications) { notification in
+
+        NotificationCell(notification: notification)
       }
     }
   }
