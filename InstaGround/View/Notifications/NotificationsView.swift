@@ -12,10 +12,13 @@ struct NotificationsView: View {
   
   var body: some View {
     ScrollView {
-//      ForEach(0 ..< 15) { item in
-      ForEach(viewModel.notifications) { notification in
-
-        NotificationCell(notification: notification)
+      LazyVStack(spacing: 20) {
+        //      ForEach(0 ..< 15) { item in
+        ForEach(viewModel.notifications) { notification in
+          //        NotificationCell(notification: notification)
+          NotificationCell(viewModel: NotificationCellViewModel(notification: notification))
+            .padding(.top)
+        }
       }
     }
   }

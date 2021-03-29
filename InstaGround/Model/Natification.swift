@@ -17,6 +17,8 @@ struct Notification: Identifiable, Decodable {
 //  let type: Int
   let type: NotificationType
   let uid: String
+  
+  var isFollowed: Bool? = false
 }
 
 enum NotificationType: Int, Decodable {

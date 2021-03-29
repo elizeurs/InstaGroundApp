@@ -13,6 +13,7 @@ class ProfileViewModel: ObservableObject {
   
   init(user: User) {
     self.user = user
+    checkIfUserIsFollowed()
   }
   
   func follow() {
