@@ -12,6 +12,7 @@ class CommentViewModel: ObservableObject {
   private let post: Post
   @Published var comments = [Comment]()
   
+  
   init(post: Post) {
     self.post = post
     fetchComments()

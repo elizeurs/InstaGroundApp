@@ -86,7 +86,8 @@ struct FeedCell: View {
         //          Text("the_travelbum").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text(" You won't believe this place exists in Brazil")
         Text(viewModel.post.ownerUsername).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text(" \(viewModel.post.caption)")
         
-        Text("1w")
+//        Text("1w")
+        Text(viewModel.timestampString)
           .foregroundColor(.gray)
       }
       .padding(.leading)

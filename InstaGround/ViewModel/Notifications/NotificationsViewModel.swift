@@ -32,6 +32,7 @@ class NotificationsViewModel: ObservableObject {
   // static: you don't have to initialize the notificationViewModel everytime you want to upload this func and you'll be able to access it wherever you want.
   static func uploadNotification(toUid uid: String, type: NotificationType, post: Post? = nil) {
     guard let user = AuthViewModel.shared.currentUser else { return }
+    guard uid != user.id else { return }
     
     var data: [String: Any] = ["timestamp": Timestamp(date: Date()),
                                "username": user.username,
