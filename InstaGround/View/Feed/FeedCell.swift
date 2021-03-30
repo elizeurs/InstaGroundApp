@@ -90,6 +90,8 @@ struct FeedCell: View {
           .foregroundColor(.gray)
       }
       .padding(.leading)
+      
+      Spacer()
     }
   }
 }
