@@ -91,6 +91,7 @@ struct FeedCell: View {
           .foregroundColor(.gray)
       }
       .padding(.leading)
+      .padding(.trailing)
       
       Spacer()
     }
