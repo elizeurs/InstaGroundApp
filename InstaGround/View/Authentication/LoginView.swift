@@ -47,14 +47,16 @@ struct LoginView: View {
               
               Spacer()
               
-              Button(action: {}, label: {
-                Text("Forgot Password?")
-              })
+              NavigationLink(
+                destination: ResetPasswordView(email: $email),
+                label: {
+                  Text("Forgot Password?")
+                    .padding(.horizontal, 32)
+                    .padding(.top)
+                    .foregroundColor(.white)
+                    .font(.system(size: 13, weight: .semibold))
+                })
             }
-            .padding(.horizontal, 32)
-            .padding(.top)
-            .foregroundColor(.white)
-            .font(.system(size: 14, weight: .semibold))
             
             Button(action: {
               viewModel.login(withEmail: email, password: password)
@@ -71,11 +73,13 @@ struct LoginView: View {
             Spacer()
             
             NavigationLink(
-              destination: RegistrationView(), label: {
+              destination: RegistrationView().navigationBarHidden(true), label: {
                 HStack {
                   Text("Don't have an account?")
+                    .font(.system(size: 14))
+                  
                   Text(" Sign Up")
-                    .fontWeight(.semibold)
+                    .font(.system(size: 14, weight: .semibold))
                 }
                 .foregroundColor(.white)
                 .padding(.bottom, 30)

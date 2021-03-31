@@ -15,6 +15,7 @@ struct RegistrationView: View {
   @State private var image: Image?
   @State private var selectedImage: UIImage?
   @State var imagePickerPresented = false
+  @Environment(\.presentationMode) var mode
   @EnvironmentObject var viewModel: AuthViewModel
   
     var body: some View {
@@ -85,9 +86,12 @@ struct RegistrationView: View {
           Spacer()
           
           HStack {
-            Text("Already have an account?")
-            Text("Sign In")
-              .fontWeight(.semibold)
+            Button(action: { mode.wrappedValue.dismiss() }, label: {
+              Text("Already have an account")
+                .font(.system(size: 14))
+              Text("Sign In")
+                .font(.system(size: 14, weight: .semibold))
+            })
           }
           .padding(.bottom)
           
