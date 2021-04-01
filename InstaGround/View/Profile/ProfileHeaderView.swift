@@ -12,7 +12,6 @@ struct ProfileHeaderView: View {
 //  let user: User
   @ObservedObject var viewModel: ProfileViewModel
 
-  
   @State var isFollowed = false
   
   var body: some View {
@@ -44,8 +43,11 @@ struct ProfileHeaderView: View {
           .font(.system(size: 18, weight: .semibold))
           .padding(.top)
         
-        Text("Happy exploring!")
-          .padding(.top, 1)
+//        Text("Happy exploring!")
+        if let bio = viewModel.user.bio {
+          Text(bio)
+            .padding(.top, 1)
+        }
       }.padding(.leading)
       
       

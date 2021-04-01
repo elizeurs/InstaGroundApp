@@ -14,6 +14,7 @@ struct User: Identifiable, Decodable {
   let fullname: String
 //  let uid: String
   @DocumentID var id: String?
+  var bio: String?
   var stats: UserStats?
   var isFollowed: Bool? = false
   

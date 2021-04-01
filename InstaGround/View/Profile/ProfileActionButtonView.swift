@@ -12,21 +12,23 @@ struct ProfileActionButtonView: View {
   @ObservedObject var viewModel: ProfileViewModel
 //  var isFollowed = false
   var isFollowed: Bool { return viewModel.user.isFollowed ?? false }
+  @State var showEditProfile = false
   
   
     var body: some View {
       if viewModel.user.isCurrentUser {
           Button(action: {
-              print("Button action")
+//              print("Button action")
+            showEditProfile.toggle()
           }) {
               Text("Edit Profile")
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .foregroundColor(.black)
                 .font(.system(size: 18, weight: .semibold))
-                .padding()
-                .border(Color.black, width: 1)
-                .padding(.top)
-
+                .frame(width: 360, height: 32)
+                .foregroundColor(.black)
+                .overlay(RoundedRectangle(cornerRadius: 3)
+                          .stroke(Color.gray, lineWidth: 1))
+          }.sheet(isPresented: $showEditProfile) {
+            EditProfileView(viewModel: EditProfileViewModel(user: viewModel.user))
           }
         } else {
           HStack() {

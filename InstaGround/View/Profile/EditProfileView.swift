@@ -8,13 +8,44 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State private var bioText = ""
+  @ObservedObject private var viewModel: EditProfileViewModel
+  @Environment(\.presentationMode) var mode
+  
+  init(viewModel: EditProfileViewModel) {
+    self.viewModel = viewModel
+  }
+  
+  var body: some View {
+    VStack {
+      HStack {
+        Button(action: { mode.wrappedValue.dismiss() }, label: {
+          Text("Cancel")
+        })
+        
+        Spacer()
+        
+        Button(action: { viewModel.saveUserBio(bioText) }, label: {
+          Text("Done")
+        })
+      }.padding()
+      
+      TextArea(text: $bioText, placeholder: "Add your bio...")
+        .frame(width: 370, height: 200)
+        .padding()
+      
+      Spacer()
     }
+    .onReceive(viewModel.$uploadComplete) { completed in
+      if completed {
+        self.mode.wrappedValue.dismiss()
+      }
+    }
+  }
 }
 
-struct EditProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditProfileView()
-    }
-}
+//struct EditProfileView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    EditProfileView()
+//  }
+//}
