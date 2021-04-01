@@ -21,7 +21,7 @@ struct CommentCell: View {
           .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
         
 //        Text("touropia").font(.system(size: 14, weight: .semibold)) + Text(" What a wonderful world!").font(.system(size: 14))
-        Text(comment.username).font(.system(size: 14, weight: .semibold)) + Text(comment.commentText).font(.system(size: 14))
+        Text(comment.username).font(.system(size: 14, weight: .semibold)) + Text(" \(comment.commentText)").font(.system(size: 14))
 
         Spacer()
         
